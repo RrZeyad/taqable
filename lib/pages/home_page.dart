@@ -12,8 +12,9 @@ class HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor:  Theme.of(context).backgroundColor,
+      backgroundColor: Theme.of(context).backgroundColor,
       appBar: AppBar(
+        centerTitle: true,
         title: Center(
             child: Text('تقبل', style: Theme.of(context).textTheme.headline6)),
         actions: [
@@ -23,6 +24,20 @@ class HomePageState extends State<HomePage> {
             color: Theme.of(context).buttonColor,
             iconSize: 28,
           ),
+        ],
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+        items: [
+          BottomNavigationBarItem(
+              icon: Icon(Icons.lock_clock),
+              label: 'الساعه',
+              backgroundColor: Theme.of(context).bottomAppBarColor),
+          const BottomNavigationBarItem(
+              icon: Icon(Icons.lock_clock), label: 'الساعه'),
+          const BottomNavigationBarItem(
+              icon: Icon(Icons.lock_clock), label: 'الساعه'),
+          const BottomNavigationBarItem(
+              icon: Icon(Icons.lock_clock), label: 'الساعه'),
         ],
       ),
     );

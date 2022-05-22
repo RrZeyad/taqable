@@ -1,3 +1,5 @@
+// ignore_for_file: deprecated_member_use
+
 import 'package:flutter/material.dart';
 import 'package:taqable/pages/home_page.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
@@ -15,6 +17,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'tsqable app',
       theme: ThemeData(
+        bottomAppBarColor: const Color.fromRGBO(34, 40, 49, 1),
         backgroundColor: const Color.fromRGBO(57, 62, 70, 1),
         buttonColor: const Color.fromRGBO(0, 173, 181, 1),
         colorScheme: ColorScheme.fromSwatch().copyWith(
@@ -30,8 +33,8 @@ class MyApp extends StatelessWidget {
                 fontWeight: FontWeight.w400,
               ),
               headline6: const TextStyle(
-                color: Color.fromRGBO(238, 238, 238, 1),
-                fontSize: 32,
+                color: Color.fromRGBO(0, 173, 181, 1),
+                fontSize: 34,
                 fontFamily: 'MarkaziText',
                 fontWeight: FontWeight.w500,
               ),
