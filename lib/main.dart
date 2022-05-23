@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'tsqable app',
       theme: ThemeData(
-        bottomAppBarColor: const Color.fromRGBO(34, 40, 49, 1),
+        bottomNavigationBarTheme: BottomNavigationBarThemeData(backgroundColor: const Color.fromRGBO(34, 40, 49, 1),),
         backgroundColor: const Color.fromRGBO(57, 62, 70, 1),
         buttonColor: const Color.fromRGBO(0, 173, 181, 1),
         colorScheme: ColorScheme.fromSwatch().copyWith(
