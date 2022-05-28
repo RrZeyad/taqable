@@ -1,3 +1,5 @@
+// ignore_for_file: deprecated_member_use
+
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:taqable/widgets/BottomBar.dart';
@@ -35,6 +37,7 @@ class HomePageState extends State<HomePage> {
                     icon: const FaIcon(FontAwesomeIcons.alignRight),
                     color: Theme.of(context).buttonColor,
                     iconSize: 28,
+                    
                   ),
                 ),
               ],
