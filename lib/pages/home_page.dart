@@ -24,7 +24,6 @@ class HomePageState extends State<HomePage> {
     double screenHeight = MediaQuery.of(context).size.height;
     double statusBarHeight = MediaQuery.of(context).padding.top;
     return Scaffold(
-        backgroundColor: Theme.of(context).backgroundColor,
         body: Stack(
           children: [
             Column(
@@ -35,7 +34,6 @@ class HomePageState extends State<HomePage> {
                   child: IconButton(
                     onPressed: () {},
                     icon: const FaIcon(FontAwesomeIcons.alignRight),
-                    color: Theme.of(context).buttonColor,
                     iconSize: 28,
                     
                   ),

@@ -1,14 +1,14 @@
 // ignore_for_file: deprecated_member_use
 
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 BottomNavigationBar bottomBar(
     {required currentIndex, required context, required changeItem}) {
   return BottomNavigationBar(
     currentIndex: currentIndex,
-    selectedItemColor:  Theme.of(context).buttonColor,
+    selectedItemColor: Theme.of(context).buttonColor,
     onTap: changeItem,
-    
     items: [
       BottomNavigationBarItem(
           icon: const Icon(Icons.explore),
@@ -21,7 +21,10 @@ BottomNavigationBar bottomBar(
           backgroundColor:
               Theme.of(context).bottomNavigationBarTheme.backgroundColor),
       BottomNavigationBarItem(
-          icon: const Icon(Icons.lock_clock),
+          icon: const FaIcon(
+            FontAwesomeIcons.mosque,
+            size: 20,
+          ),
           label: 'سبح',
           backgroundColor:
               Theme.of(context).bottomNavigationBarTheme.backgroundColor),
