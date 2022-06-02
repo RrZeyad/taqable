@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'tsqable app',
       darkTheme: Themes.dark,
-      theme: Themes.light,
+      theme: Themes.dark,
       themeMode: ThemeService().theme,
       home: const HomePage(),
     );

@@ -9,6 +9,7 @@ BottomNavigationBar bottomBar(
     currentIndex: currentIndex,
     selectedItemColor: Theme.of(context).buttonColor,
     onTap: changeItem,
+    selectedLabelStyle: Theme.of(context).bottomNavigationBarTheme.selectedLabelStyle,
     items: [
       BottomNavigationBarItem(
           icon: const Icon(Icons.explore),

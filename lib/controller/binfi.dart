@@ -1,4 +1,4 @@
-import 'package:taqable/controller/controller.dart';
+import 'package:taqable/controller/Controller.dart';
 import 'package:get/get.dart';
 
 class MyBinding extends Bindings {

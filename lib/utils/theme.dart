@@ -1,17 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class Themes {
   static final light = ThemeData.light().copyWith(
     bottomNavigationBarTheme: const BottomNavigationBarThemeData(
-        selectedIconTheme: IconThemeData(size: 30),
-        unselectedIconTheme: IconThemeData(size: 24),
-        unselectedItemColor: Colors.white38,
-        selectedItemColor: Colors.white,
+        selectedIconTheme: IconThemeData(size: 30, color: Colors.white38),
+        unselectedIconTheme: IconThemeData(size: 24, color: Colors.white),
         backgroundColor: Colors.blueAccent),
     scaffoldBackgroundColor: const Color.fromRGBO(239, 239, 239, 1),
     iconTheme: const IconThemeData(
-      color: Color.fromRGBO(0, 173, 181, 1),
+      color: Colors.blueAccent,
     ),
     buttonTheme: ButtonThemeData(
       colorScheme: const ColorScheme.light().copyWith(
@@ -23,7 +20,17 @@ class Themes {
 
   static final dark = ThemeData.dark().copyWith(
     bottomNavigationBarTheme: const BottomNavigationBarThemeData(
-      unselectedItemColor: Colors.grey,
+      selectedIconTheme: IconThemeData(
+        size: 30,
+        color: Color.fromRGBO(0, 173, 181, 1),
+      ),
+      unselectedIconTheme: IconThemeData(
+        size: 24,
+        color: Colors.white38,
+      ),
+      selectedLabelStyle: TextStyle(
+        color: Color.fromRGBO(0, 173, 181, 1),
+      ),
       backgroundColor: Color.fromRGBO(34, 40, 49, 1),
     ),
     buttonTheme: ButtonThemeData(
