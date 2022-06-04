@@ -7,7 +7,7 @@ BottomNavigationBar bottomBar(
     {required currentIndex, required context, required changeItem}) {
   return BottomNavigationBar(
     type: BottomNavigationBarType.fixed,
-    showUnselectedLabels: true,
+    showUnselectedLabels: false,
     currentIndex: currentIndex,
     onTap: changeItem,
     items: [
